@@ -2,6 +2,19 @@
 This script was heavily cluttered before, so I decided to, at the very least,
 clean up the dunders. I'm much happier with what I have now. I guess the next
 thing to do is clean up the rest of it...
+
+TODO:
+    [] Comment code
+    [] Finish code
+    [] Refactor code
+    [] Argparse
+
+Notes:
+    misctools.timer is a package I made, but it can be found in my github. I
+    mainly used it here for the timing decorator, but it's not necessary at all
+
+    The thing about my script that I'm most pleased with? The speed. And the
+    output, which is easily distinguishable as solved or not.
 """
 
 
@@ -167,7 +180,7 @@ def single():
     g.solve()
     print(g)
 
-@timeit
+# @timeit
 def main():
     y = 0
     for x, i in enumerate(puzzles):
